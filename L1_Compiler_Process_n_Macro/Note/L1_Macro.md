@@ -1,5 +1,5 @@
 # Macro
-## 1. Thu vien
+
 ```c
 #include <stdio.h>   //File san he thong  
 #include "test.h"    //Tu tao
@@ -21,7 +21,7 @@ define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
 **Thiet ke thu vien** (bat buoc)  *1 file thu vien kem 1 file thuc thi ma lenh (.h + .c)*
 
-*VD*
+*VD:*
 
 ```c
 test.h
@@ -43,6 +43,7 @@ void dislay() {    //dinh nghia ham
 }
 ```
 
+**VD (cai khac)**
 
 ```c
 #define ESP32    1
@@ -61,8 +62,9 @@ int main(...){
     }
 }
 ```
-
-
+   
+     
+**Note**  
 \: viet them nhieu dong (#define)  
 #: tao chuoi  
 ##: noi chuoi
