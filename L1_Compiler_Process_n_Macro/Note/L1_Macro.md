@@ -1,6 +1,6 @@
 # Macro
 ## 1. Thu vien
-```json
+```c
 #include <stdio.h>   //File san he thong  
 #include "test.h"    //Tu tao
 
@@ -13,7 +13,7 @@ void: quay lai vung nho goi ham
 define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
 *VD*
-```json
+```c
 #define MCU STM32   //Muon dung lai MCU
 #undef MCU
 #define Adruino     //Define lai
@@ -23,7 +23,7 @@ define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
 *VD*
 
-```json
+```c
 test.h
 #ifdef TEST_H     //neu chua dinh nghia thi dinh nghia
 #define TEST_H
@@ -35,7 +35,7 @@ void display(); //chi neu dinh nghia ham
 
 test.c
 
-```json  
+```c  
 #include "test.h"
 
 void dislay() {    //dinh nghia ham
@@ -44,7 +44,7 @@ void dislay() {    //dinh nghia ham
 ```
 
 
-```json
+```c
 #define ESP32    1
 #define STM32    2
 
