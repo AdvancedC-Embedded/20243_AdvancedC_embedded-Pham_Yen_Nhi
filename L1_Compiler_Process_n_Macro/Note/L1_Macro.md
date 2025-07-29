@@ -1,28 +1,29 @@
 # Macro
+## 1. Thu vien
+```json
+#include <stdio.h>   //File san he thong  
+#include "test.h"    //Tu tao
 
-#include <stdio.h> => file san he thong
-
-#include "test.h" => tu tao
-
-#define MCU STM32   dinh nghia thay the
-
+#define MCU STM32   //Dinh nghia thay the
 #define PLUS(x, y) ((x) + (y))
+```
 
-define function
-#define SUM(a, b)\    "\": cho phep viet them nhieu dong
-printf("sum: %d", a+b)
-
-void
-
-program counter
+**Program counter**  
 void: quay lai vung nho goi ham
 define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
-#define MCU STM32   muon dung lai MCU
+*VD*
+```json
+#define MCU STM32   //Muon dung lai MCU
 #undef MCU
-#define Adruino     define lai
+#define Adruino     //Define lai
+```
 
-Thiet ke thu vien (bat buoc)
+**Thiet ke thu vien** (bat buoc)  *1 file thu vien kem 1 file thuc thi ma lenh (.h + .c)*
+
+*VD*
+
+```json
 test.h
 #ifdef TEST_H     //neu chua dinh nghia thi dinh nghia
 #define TEST_H
@@ -30,16 +31,20 @@ test.h
 void display(); //chi neu dinh nghia ham
 
 #undef TEST_H
+```
 
 test.c
+
+```json  
 #include "test.h"
 
 void dislay() {    //dinh nghia ham
-    printf("...)  
+    printf("...")  
 }
+```
 
-1 file thu vien kem 1 file thuc thi ma lenh (.h + .c)
 
+```json
 #define ESP32    1
 #define STM32    2
 
@@ -55,4 +60,16 @@ int main(...){
         #endif
     }
 }
+```
 
+
+\: viet them nhieu dong (#define)  
+#: tao chuoi  
+##: noi chuoi
+
+...  
+__VA_ARGS__: variadic - ham nhieu tham so  
+
+*VD:*  
+#define sum(...)  
+int arr[] = (__VA_ARGS__);
