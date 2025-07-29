@@ -12,7 +12,7 @@
 void: quay lai vung nho goi ham
 define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
-*VD*
+**VD:**
 ```c
 #define MCU STM32   //Muon dung lai MCU
 #undef MCU
@@ -21,10 +21,11 @@ define: khoi tao vung nho moi (tang bo nho nhung nhanh hon)
 
 **Thiet ke thu vien** (bat buoc)  *1 file thu vien kem 1 file thuc thi ma lenh (.h + .c)*
 
-*VD:*
+**VD:**
+
+test.h
 
 ```c
-test.h
 #ifdef TEST_H     //neu chua dinh nghia thi dinh nghia
 #define TEST_H
 //Guard - tranh trung lap trong test.c
