@@ -65,13 +65,14 @@ int main(...){
    
      
 **Note**  
-\: viet them nhieu dong (#define)  
-#: tao chuoi  
-##: noi chuoi
+```c
+\      //Viet them nhieu dong (#define)  
+#      //Tao chuoi  
+##     //Noi chuoi
 
 ...  
-__VA_ARGS__: variadic - ham nhieu tham so  
+__VA_ARGS__: variadic     //Ham nhieu tham so  
 
-*VD:*  
 #define sum(...)  
 int arr[] = (__VA_ARGS__);
+```
